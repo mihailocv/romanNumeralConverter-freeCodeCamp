@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container py-5">
+      <section class="py-5 text-center">
+        <h1 class="display-1">Roman Numeral Converter</h1>
+        <p class="fw-lighter fs-5">
+          Simple converter that converts Arabic numbers (like 2025) to Roman
+          numerals (like MMXXV)
+        </p>
+      </section>
+      <section class="pb-1">
+        <div class="input-group">
+          <div class="form-floating">
+            <input
+              id="number"
+              type="number"
+              class="form-control"
+              placeholder="Arabic number"
+            />
+            <label for="number">Enter Arabic number:</label>
+          </div>
+          <button id="convert-btn" type="button" class="btn btn-primary">
+            Convert
+          </button>
+        </div>
+      </section>
+      <section class="output-section">
+        <div
+          id="output"
+          class="border border-2 border-primary fs-3 fw-bold text-center py-3"
+        ></div>
+      </section>
+      <section class="desc-section border-top border-1 d-flex flex-row flex-wrap row-gap-4">
+        <div class="desc">
+            <h2 class="text-center pb-3 display-5 fw-bold">History and Facts about Roman Numerals</h2>
+            <p>
+                Roman numerals originated in ancient Rome and were used throughout the Roman Empire in various aspects of daily life, including in commerce, architecture, and in the recording of dates. The system is based on combinations of letters from the Latin alphabet: I, V, X, L, C, D, and M.
+            </p>
+            <p>
+                The smallest number that can be represented using Roman numerals is 1, denoted by the letter 'I'. The largest number that can be represented using the basic Roman numeral symbols is 3,999, which is written as 'MMMCMXCIX'.
+            </p>
+            <p>
+                Roman numerals were gradually replaced by the more efficient Arabic numeral system, which originated in India and was introduced to Europe through the works of Middle Eastern mathematicians. The transition began in the Middle Ages and was largely complete by the 14th century.
+            </p>
+            <p>
+                Despite being largely obsolete in everyday use, Roman numerals are still employed in certain contexts today. They are often used to denote the year in the credits of movies and TV shows, to number the chapters of books, and to mark special events such as the Olympic Games and the Super Bowl.
+            </p>
+        </div>
+        <div class="desc">
+            <h2 class="text-center pb-3 display-5 fw-bold">Arabic and Roman numerals table</h2>
+            <p>
+              Below is a table that lists the basic Roman numerals alongside their
+              corresponding Arabic numbers. This can help you understand the
+              conversion between the two numeral systems.
+            </p>
+            <table
+              class="table table-striped table-hover table-bordered border-primary"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">Arabic Number</th>
+                  <th scope="col">Roman Numeral</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>I</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>IV</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>V</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>IX</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td>XL</td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>L</td>
+                </tr>
+                <tr>
+                  <td>90</td>
+                  <td>XC</td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>400</td>
+                  <td>CD</td>
+                </tr>
+                <tr>
+                  <td>500</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <td>900</td>
+                  <td>CM</td>
+                </tr>
+                <tr>
+                  <td>1000</td>
+                  <td>M</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </section>
+      <footer>
+        <p class="text-center pt-5">Made with ❤️ by mihailocv</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
